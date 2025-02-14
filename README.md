@@ -1,4 +1,4 @@
-Projet d'application en classe à l'EPSI
+Projet d'application web en classe à l'EPSI
 
 SI vous voulez tester, voici un compte : mail = test3@test4 | mdp = test
 
