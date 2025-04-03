@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : ven. 14 fév. 2025 à 19:37
+-- Généré le : jeu. 03 avr. 2025 à 12:36
 -- Version du serveur : 10.4.32-MariaDB
 -- Version de PHP : 8.2.12
 
@@ -20,8 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Base de données : `latemate`
 --
-CREATE DATABASE IF NOT EXISTS `latemate` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `latemate`;
 
 -- --------------------------------------------------------
 
@@ -44,7 +42,7 @@ INSERT INTO `likes` (`like_id`, `date_like`, `usr_id`, `post_id`) VALUES
 (55, '2023-12-12 01:48:51', 35, 20),
 (56, '2023-12-12 07:27:56', 35, 22),
 (57, '2023-12-12 08:27:33', 42, 22),
-(58, '2025-02-14 15:56:49', 35, 23);
+(59, '2025-04-03 10:34:29', 35, 23);
 
 -- --------------------------------------------------------
 
@@ -70,13 +68,9 @@ CREATE TABLE `posts` (
 --
 
 INSERT INTO `posts` (`id`, `utilisateur_id`, `author_name`, `author_surname`, `titre`, `contenu`, `document`, `raison`, `date_creation`, `likes`) VALUES
-(16, 31, 'test3', 'test3', 'Je suis un titre', 'Je suis une description', 'posts_img/img_12ccd9925c216200acc0b8e6e10c2d61.png', 'Je suis une raison', '2023-12-11 17:34:51', NULL),
-(17, 31, 'test3', 'test3', 'Je suis un titre V2', 'je suis une description', 'posts_img/img_1a8bbd1633da0330a4d52572aa8a8100.png', 'Je suis une raison', '2023-12-11 17:35:32', NULL),
-(18, 31, 'test3', 'test3', 'Je suis un titre', 'Je suis une description', 'posts_img/img_6a70ed766d9ed3e9ee810aa994f59c23.png', 'Je suis une raison', '2023-12-11 17:36:50', NULL),
-(19, 31, 'Prenom', 'Nom', 'Je suis un titre', 'Je suis une description', 'posts_img/img_3f070170ede7b9d24e67ebec671fe1eb.png', 'Je suis une raison', '2023-12-11 17:37:35', NULL),
 (20, 32, 'Eydis', 'Eydis', 'J&#39;ai eu un accident', 'Je vous jure on ma laisser pour mort', 'posts_img/img_9533991b4910caed9f22de6c696d691f.jpg', 'Un accident sur la A5 à cause d&#39;un chauffard, j\'ai cru que j\'allais clamser omg', '2023-12-11 17:40:33', NULL),
 (22, 31, 'test3', 'test3', 'batterie de teste avec like', 'J&#39;ai glissé sur un Flamby', 'posts_img/img_24d9da4a57ef71fc244d42ae93a78bdf.png', 'j&#39;ai glissé chef', '2023-12-11 23:11:34', 'like/6a6201404aa1ea8cefed3e3f62c58d46.json'),
-(23, 35, 'Bourpi', 'Bourpi', 'J&#39;ai glissé sur un pinguoi', 'bourpi', 'posts_img/img_046d3d4ec8b082d0147ccf9be822ccc9.png', 'a', '2023-12-12 08:31:41', NULL);
+(23, 35, 'Alexis', 'Alex', 'Problème de bus', 'Le bus ma skip comme une pub youtube', 'posts_img/img_046d3d4ec8b082d0147ccf9be822ccc9.png', 'Bus raté, retard, car le prochain bus est dans un moment', '2023-12-12 08:31:41', NULL);
 
 -- --------------------------------------------------------
 
@@ -143,7 +137,7 @@ ALTER TABLE `utilisateurs`
 -- AUTO_INCREMENT pour la table `likes`
 --
 ALTER TABLE `likes`
-  MODIFY `like_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
+  MODIFY `like_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
 
 --
 -- AUTO_INCREMENT pour la table `posts`
